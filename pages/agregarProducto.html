@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraWeek</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="logo"></a>
+        <nav class="nav">
+            <form class="nav__buscar" action="">
+                <input class="nav__input" type="text" placeholder="¿Qué deseas buscar?">
+                <button class="nav__lupa" type="submit"><i class="fi fi-br-search"></i></button>
+            </form>
+            <a class="nav__ingresar" href="./ingresar.html">Ingresar</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-nuevo">
+            <h2>Agregar nuevo producto</h2>
+            <form action="" class="main-nuevo__form" data-form>
+                <input type="text" id="id" hidden>
+                <div class="titulo__input">
+                    <label for="">Categoría:</label>
+                    <select name="" id="" form-select>
+                        <option value="starwars">Starwars</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="diversos">Diversos</option>
+                    </select>
+                </div>
+                <div class="titulo__input">
+                    <label for="">URL de la imagen:   </label>
+                    <input type="text" placeholder="URL del producto..." form-url>
+                </div>
+                <div class="titulo__input">
+                    <label for="">Nombre:</label>
+                    <input type="text" placeholder="Nombre del producto..." form-nombre>
+                </div>
+                <div class="titulo__input">
+                    <label for="">Precio:</label>
+                    <input type="text" placeholder="Precio del producto..." form-precio>
+                </div>
+                <div class="titulo__input">
+                    <label for="">Descripción:</label>
+                    <input type="text" placeholder="Descripcion del producto..." form-descripcion>
+                </div>
+                <div class="titulo__input">
+                    <button type="submit" form-agregar>Agregar Producto</button>
+                </div>
+
+            </form>  
+        </div>
+    </main>
+
+    <footer>
+        <div class="rodapie">
+            <div class="rodapie-info">
+                <div class="rodapie__logo">
+                    <img class="rodapie__logo__img" src="../assets/img/Logo.png" alt="">
+                </div>
+                
+                <ul class="rodapie-lista">
+                    <li><a href="">Quiénes somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendas</a></li>
+                    <li><a href="">Quiero ser franquiciado</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+
+            <div class="rodapie-contacto">
+                <p>Hable con nosotros</p>
+                <form action="" class="rodapie-contacto__formulario">
+                    <input type="text" name="" id="" placeholder="Nombre...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aquí..." ></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Desarrollado por Romina Caracotche</p>
+            <p>2023</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js"></script>
+    <script src="../controllers/agregarProductoController.js" type="module"></script>
+</body>
+</html>

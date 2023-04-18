@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+
+    <header>
+        <a href="" class="logo"><img src="./assets/img/Logo.png" alt="logo"></a>
+        <nav class="nav">
+            <form class="nav__buscar" action="">
+                <input class="nav__input" type="text" placeholder="¿Qué deseas buscar?" id="buscar">
+                <button class="nav__lupa" type="submit"><i class="fi fi-br-search"></i></button>
+            </form>
+
+            <a class="ingresar-icono" href="./pages/ingresar.html"><i class="fi fi-rr-user"></i></a>
+            <a class="nav__ingresar" href="./pages/ingresar.html">Ingresar</a>
+            <!-- <a class="nav__ingresar" href="./pages/registrarse.html">Registrarse</a> -->
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="container-main">
+            <p class="container-main__titulo">Marzo Promocional</p>
+            <p class="container-main__descripcion">Productos seleccionados con 33% de descuento</p>
+            <a class="main__btn" href="">Ver Consolas</a>
+        </div>
+    </main>
+    
+    <div class="container-modal" id="modal">
+        <div class="ventana-modal">
+            <img class="modal__imagen" src="" alt="">
+            <div class="modal-info">
+                <div class="modal-boton">
+                    <button class="producto-cerrar">X</button>
+                </div>
+                
+                <div class="modal-todo">
+                    <h2 class="modal__titulo"></h2>
+                    <p class="modal__precio"></p>
+                    <p class="modal__descripcion"></p>
+                </div>    
+            </div>   
+        </div>
+    </div>
+
+    <section class="filtrados-ocultos" id="seccion-filtrados"> 
+        <div class="section section-filtrados">
+            <div class="section-header">
+                <h2 class="section-filtrados__titulo">"Resultado de la búsqueda"</h2>
+            </div>    
+            <div class="contenedor-productos" id="contenedor-filtrados">
+                
+            </div>
+        </div>   
+    </section>
+
+    <section> 
+        <div class="section section-starWars">
+            <div class="section-header">
+                <h2>Star Wars</h2>
+                <a class="section-header__todo" href="./pages/verProductos.html"><span>Ver todo</span><i class="fi fi-rr-arrow-small-right"></i></a>
+            </div>
+            <div class="contenedor-productos" id="contenedor-starwars">
+                
+            </div>
+        </div>   
+    </section>
+    
+    <section>
+        <div class="section">
+            <div class="section-header">
+                <h2>Consolas</h2>
+                <a class="section-header__todo" href="./pages/verProductos.html"><span>Ver todo</span><i class="fi fi-rr-arrow-small-right"></i></a>
+            </div>
+            <div class="contenedor-productos" id="contenedor-consolas">
+            
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section section-diversos">
+            <div class="section-header">
+                <h2>Diversos</h2>
+                <a class="section-header__todo" href="./pages/verProductos.html"><span>Ver todo</span><i class="fi fi-rr-arrow-small-right"></i></a>
+            </div>
+            <div class="contenedor-productos" id="contenedor-diversos">
+               
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="rodapie">
+            <div class="rodapie-info">
+                <div class="rodapie__logo">
+                    <img class="rodapie__logo__img" src="./assets/img/Logo.png" alt="">
+                </div>
+                
+                <ul class="rodapie-lista">
+                    <li><a href="">Quiénes somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendas</a></li>
+                    <li><a href="">Quiero ser franquiciado</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+
+            <div class="rodapie-contacto">
+                <p>Hable con nosotros</p>
+                <form action="" class="rodapie-contacto__formulario">
+                    <input type="text" name="" id="" placeholder="Nombre...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aquí..." ></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Desarrollado por Romina Caracotche</p>
+            <p>2023</p>
+        </div>
+    </footer>
+
+    <script src="./controllers/listarProductosController.js" type="module"></script>
+</body>
+</html>

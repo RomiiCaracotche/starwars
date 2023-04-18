@@ -1,0 +1,138 @@
+{
+  "starwars": [
+    {
+      "id": 1,
+      "imagen": "./assets/img/starWars/starwars1.png",
+      "nombre": "starwars1",
+      "precio": "$2700",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "id": "2",
+      "imagen": "./assets/img/starWars/starwars2.png",
+      "nombre": "starwars2",
+      "precio": "$1800",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "id": "3",
+      "imagen": "./assets/img/starWars/starwars3.png",
+      "nombre": "starwars3",
+      "precio": "$1800",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    }
+    ,
+    {
+      "id": "4",
+      "imagen": "./assets/img/starWars/starwars4.png",
+      "nombre": "starwars4",
+      "precio": "$1800",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    }
+    ,
+    {
+      "id": "5",
+      "imagen": "./assets/img/starWars/starwars5.png",
+      "nombre": "starwars5",
+      "precio": "$1800",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    }
+    ,
+    {
+      "id": "6",
+      "imagen": "./assets/img/starWars/starwars6.png",
+      "nombre": "starwars6",
+      "precio": "$1800",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    }
+  ],
+  "consolas": [
+    {
+      "imagen": "/assets/img/consolas/consola1.png",
+      "nombre": "consola105",
+      "precio": "$25000",
+      "descripcion": "lero lero lero",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "categoria": "consolas",
+      "imagen": "/assets/img/consolas/consola2.png",
+      "nombre": "consola2",
+      "precio": "$1800",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "id": "3",
+      "imagen": "./assets/img/consolas/consola3.png",
+      "nombre": "consola3",
+      "precio": "$1200",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "imagen": "./assets/img/consolas/consola4.png",
+      "nombre": "consola4",
+      "precio": "$13000",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus.",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "imagen": "./assets/img/consolas/consola5.png",
+      "nombre": "consola5",
+      "precio": "$1400",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP979256-MLA46991914028_082021-B.jpg",
+      "nombre": "xbox23",
+      "precio": "25000",
+      "descripcion": "es la mejor de todas",
+      "id": "8326291e-6186-4247-b8f5-9978af453369"
+    }
+  ],
+  "diversos": [
+    {
+      "id": "1",
+      "imagen": "./assets/img/diversos/diverso1.png",
+      "nombre": "diverso1",
+      "precio": "$2500",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "id": "2",
+      "imagen": "./assets/img/diversos/diverso2.png",
+      "nombre": "diverso2",
+      "precio": "$1800",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "id": "3",
+      "imagen": "./assets/img/diversos/diverso3.png",
+      "nombre": "diverso3",
+      "precio": "$1200",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "imagen": "./assets/img/diversos/diverso5.png",
+      "nombre": "diverso55",
+      "precio": "$1400",
+      "descripcion": "Lorem",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "imagen": "./assets/img/diversos/diverso6.png",
+      "nombre": "diverso6",
+      "precio": "$1600",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    },
+    {
+      "id": "55554",
+      "imagen": "./assets/img/diversos/diverso4.png",
+      "nombre": "diverso4",
+      "precio": "$1600",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut eaque totam nesciunt similique sunt fuga natus sequi odio fugit dicta praesentium eos, sed quam quis mollitia iste doloremque delectus."
+    }
+  ]
+}

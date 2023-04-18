@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraWeek</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="../assets/css/vertodos.css"> -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body>
+    <header>
+        <a class="logo" href="../index.html"><img src="../assets/img/Logo.png" alt="logo"></a>
+        <nav class="nav">
+            <form class="nav__buscar" action="">
+                <input class="nav__input" type="text" placeholder="¿Qué deseas buscar?">
+                <button class="nav__lupa" type="submit"><i class="fi fi-br-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <div class="container-modal" id="modal">
+        <div class="ventana-modal">
+            <img class="modal__imagen" src="" alt="">
+            <div class="modal-info">
+                <div class="modal-boton">
+                    <button class="producto-cerrar">X</button>
+                </div>
+                
+                <div class="modal-todo">
+                    <h2 class="modal__titulo"></h2>
+                    <p class="modal__precio"></p>
+                    <p class="modal__descripcion"></p>
+                </div>    
+            </div>   
+        </div>
+    </div>
+
+    <section class="section-todos">
+        <div class="section section-starWars">
+
+            <div class="section-header">
+                <h2>Todos los Productos</h2>
+                <a class="section-header__btn" href="../pages/agregarProducto.html">Agregar Producto</a>
+            </div>
+
+            <div class="contenedor-productos" id="contenedor-productos">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="rodapie">
+            <div class="rodapie-info">
+                <div class="rodapie__logo">
+                    <img class="rodapie__logo__img" src="../assets/img/Logo.png" alt="">
+                </div>
+                
+                <ul class="rodapie-lista">
+                    <li><a href="">Quiénes somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendas</a></li>
+                    <li><a href="">Quiero ser franquiciado</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+
+            <div class="rodapie-contacto">
+                <p>Hable con nosotros</p>
+                <form action="" class="rodapie-contacto__formulario">
+                    <input type="text" name="" id="" placeholder="Nombre...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje aquí..." ></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Desarrollado por Romina Caracotche</p>
+            <p>2023</p>
+        </div>
+    </footer>
+
+    <script src="../controllers/verProductosController.js" type="module"></script>
+    <script src="../controllers/eliminarProductoController.js" type="module"></script>
+</body>
+</html>

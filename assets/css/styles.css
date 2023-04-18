@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo img {
+    width: 170px;
+    height: 50px;
+}
+
+.ingresar-icono {
+    display: none;
+}
+
+.nav {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__buscar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__ingresar, .main__btn {
+    margin-right: 2rem;
+    margin-left: 1rem;
+    padding: .5rem 1rem;
+    border: 2px solid #2A7AE4;
+    color: #2A7AE4;
+    background-color: #fff;
+}
+
+.nav__ingresar:hover, .main__btn:hover {
+    color: #fff;
+    background-color: #285999;
+}
+
+.nav__input {
+    width: 300px;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border: 2px solid rgb(240, 240, 240);
+}
+
+.nav__input:hover {
+    background-color: rgb(238, 236, 236);
+}
+
+.nav__input:focus{
+    outline: none;
+}
+
+.nav__lupa {
+    width: 40px;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.nav__input, .nav__lupa {
+    height: 40px;
+    box-sizing: border-box;
+    padding: .5rem;
+}
+
+
+/* -------------------- MAIN ------------------ */
+
+.main {
+    height: 350px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+.container-main {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.container-main__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container-main__descripcion {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+/* -------------------- MODAL ------------------ */
+
+.container-modal {
+    background-color: rgba(190, 190, 190, 0.8);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container-modal__show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ventana-modal {
+    background-color: #fff;
+    width: 70%;
+    height: 60%;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ventana-modal img {
+    box-sizing: border-box;
+    margin: 2rem;
+    width: 25%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.modal-info {
+    box-sizing: border-box;
+    width: 70%;
+    height: 80%;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.modal-info p {
+    margin-top: 1rem;
+}
+
+.modal__titulo {
+    text-align: center;
+    font-size: 2rem;
+} 
+
+.modal__precio {
+    font-weight: bold;
+}
+
+.modal__descripcion {
+    text-align: justify;
+}
+
+.modal-todo {
+    height: 80%;
+} 
+
+.modal-boton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.main-ingresar {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-ingresar__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    min-width: 350px;
+}
+
+.main-ingresar h2 {
+	margin-bottom: 1rem;
+}
+
+.main-ingresar__formulario input, .main-ingresar__formulario button {
+    box-sizing: border-box;
+    width: 100%;
+    margin: .5rem;
+    height: 40px;
+    padding: 0 1rem;
+}
+
+.main-ingresar__formulario button {
+    background-color: #2A7AE4;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-ingresar__formulario button:hover {
+    background-color: #285999;
+    border: none;
+    color: #fff;
+}
+
+.main-nuevo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.main-nuevo h2 {
+    margin-bottom: 2rem;
+}
+
+.main-nuevo__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__input label {
+    display: inline-block;
+    width: 30%;
+    margin-right: .5rem;
+    font-weight: bold;
+}
+
+.titulo__input input {
+    width: 60%;
+    height: 20px;
+    margin: .5rem 0;
+    padding: 0.5rem;
+}
+
+.titulo__input select {
+    width: 64%;
+    height: 40px;
+    margin: .5rem 0;
+    padding: 0.5rem;
+} 
+
+.main-nuevo__form button {
+    width: auto;
+    margin: 2rem;
+    background-color: #2A7AE4;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+}
+
+.main-nuevo__form button:hover {
+    background-color: #285999;
+}
+
+.alerta {
+    color: red;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+/* -------------------- SECTION ------------------ */
+
+.filtrados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtrados-ocultos {
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    margin: 1.5rem 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header > h2 {
+    margin: 1rem 0;
+}
+
+.section-header__todo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #2A7AE4;
+    font-weight: 700;
+}
+
+.section-header__todo:hover {
+    color: #285999;
+}
+
+.section-header > i {
+    padding-left: 2px;
+}
+
+.section-header > span {
+    padding-bottom: .2rem;
+}
+
+.contenedor-productos {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.producto:nth-child(n+7) {
+    display: none; 
+}
+
+.producto__img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.producto__nombre {
+    margin: .6rem 0;
+}
+
+.producto__precio {
+    margin: .5rem 0;
+}
+
+.producto__ver, .producto__eliminar {
+    color: #2A7AE4;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin: 0 auto .3rem auto;
+}
+
+.producto__ver {
+    margin-top: 1rem;
+}
+
+.producto__nombre, .producto__precio, .producto__ver, .producto__eliminar, .section-header__todo {
+    font-size: 12px;
+    font-weight: bold;
+} 
+
+.section-diversos {
+    margin-bottom: 3rem;
+}
+
+.section-starWars {
+    margin-top: 3rem;
+}
+
+.producto__ver, .producto__eliminar {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.producto__ver:hover, .producto__eliminar:hover {
+    color: #285999;
+}
+
+.producto-cerrar {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    padding: .4rem .6rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.producto-cerrar:hover {
+    background-color: rgb(204, 7, 7);
+    cursor: pointer;
+}
+
+.contenedor-productos {
+    overflow: visible;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.producto:nth-child(n+7) {
+    display: block; 
+}
+
+.producto {
+    width: calc((100% - 75px) / 6);
+}
+
+.section-header__btn {
+    padding: .5rem 1rem;
+    border: 2px solid #2A7AE4;
+    color: #2A7AE4;
+    background-color: #fff;
+    text-align: center;
+    width: auto;
+}
+
+.section-header__btn:hover {
+    background-color: #285999;
+    color: #fff;
+}
+
+.section-todos {
+    padding-bottom: 1rem;
+}
+
+/* -------------------- FOOTER ------------------ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAF2FD;
+}
+
+.rodapie {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapie-info {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.rodapie__logo {
+    padding-top: 1.5rem;
+    width: 40%;
+}
+
+.rodapie__logo__img {
+    width: 80%;
+    padding-top: .5rem;
+}
+
+.rodapie-lista {
+    padding: 2rem 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.rodapie-lista a {
+    color: #000;
+    font-size: 12px;
+}
+
+.rodapie-lista a:hover {
+    font-weight: bold;
+}
+
+.rodapie-contacto {
+    width: 40%;
+    padding: 2rem 0 2rem 1rem;
+}
+
+.rodapie-contacto > p {
+    font-weight: 700;
+}
+
+.rodapie-contacto__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodapie-contacto__formulario > input {
+    height: 20px;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
+.rodapie-contacto__formulario > textarea {
+    height: 60px;
+    padding: .5rem;
+    resize: none;
+}
+
+.rodapie-contacto__formulario > button {
+    width: auto;
+    margin: 1rem auto;
+    background-color: #2A7AE4;
+    color: #fff;
+    border: none;
+    padding: .8rem;
+}
+
+.rodapie-contacto__formulario > button:hover {
+    color: #fff;
+    background-color: #285999;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+/* -------------------- QUERYS ------------------ */
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    
+    .nav__ingresar {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    
+    .logo img {
+        width: 170px;
+        height: 60px;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 0;
+        justify-content: end;
+    }
+
+    .ingresar-icono {
+        display: block;
+        margin-right: 1rem;
+    }
+    
+    .nav__ingresar {
+        margin-right: .5rem;
+    }
+
+    .nav__input {
+        display: none;
+    }
+
+    .nav__lupa {
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: .5rem;
+    }
+
+    .container-main__titulo {
+        font-size: 2.5rem;
+    }
+
+    .container-main__descripcion {
+        font-size: 1.5rem;
+    }
+
+    .ventana-modal {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .producto-cerrar {
+        margin-top: 1rem;
+    }
+
+    .modal__imagen {
+        order: 2;
+    }
+
+    .modal-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .modal-todo {
+        width: 100%;
+    }
+
+    .modal__descripcion, .modal__precio, .modal__titulo {
+        width: 100%;
+    }
+
+    .modal__precio {
+        text-align: center;
+    }
+
+    .section {
+        margin: 2rem 0;
+        width: 90%;
+    }
+
+    .producto:nth-child(n+5) {
+        display: none; 
+    }
+
+    .rodapie {
+        width: 90%;
+    }
+
+    .rodapie-info {
+        width: 40%;
+        flex-direction: column;
+        justify-content: start;
+        margin-right: 0;
+    }
+
+    .rodapie-lista {
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .rodapie-lista li {
+        margin: .3rem 0;
+    }
+
+    .rodapie-contacto {
+        width: 50%;
+        padding: 2rem 0;
+    }
+
+    .rodapie__logo {
+        width: 80%;
+    }
+    
+    .rodapie__logo__img {
+        width: 80%;
+        padding-top: .5rem;
+    }
+
+    .rodapie-contacto__formulario > button {
+        width: 100%;
+    }
+
+    .producto {
+        width: calc((100% - 45px) / 4);
+    }
+
+    .section-header__btn {
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        margin-left: .5rem;
+    }
+
+    .main-ingresar__formulario {
+        width: 50%;
+        min-width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .nav__ingresar {
+        display: none;
+    }
+
+    .nav {
+        width: 60%;
+        margin: 0;
+        justify-content: end;
+    }
+
+    .ingresar-icono {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .nav__buscar {
+        order: 1;
+    }
+
+    .nav__input {
+        display: none;
+    }
+
+    .nav__lupa {
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: .5rem;
+    }
+
+    .nav__ingresar {
+        margin-right: .5rem;
+    }
+
+    .container-main {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    .container-main__titulo {
+        font-size: 1.5rem;
+    }
+
+    .container-main__descripcion {
+        font-size: 1rem;
+    }
+
+    .ventana-modal {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .producto-cerrar {
+        margin-top: 1rem;
+    }
+
+    .modal__imagen {
+        order: 2;
+    }
+
+    .modal-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .modal-todo {
+        width: 100%;
+    }
+
+    .modal__descripcion, .modal__precio, .modal__titulo {
+        width: 100%;
+    }
+
+    .modal__precio {
+        text-align: center;
+    }
+
+    .section {
+        margin: 2rem 0;
+        width: 90%;
+    }
+
+    .producto:nth-child(n+5) {
+        display: none; 
+    }
+
+    .contenedor-productos {
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        width: 45%;
+        margin: auto;
+    }
+
+    .rodapie {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rodapie-info {
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        margin-right: 0;
+    }
+
+    .rodapie__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rodapie__logo__img {
+        width: 70%;
+    }
+
+    .rodapie-lista {
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .rodapie-lista li {
+        margin: .3rem 0;
+    }
+
+    .rodapie-contacto {
+        width: 90%;
+    }
+
+    .producto {
+        width: calc((100% - 15px) / 2);
+    }
+
+    .producto:last-child {
+        margin-left: 0; 
+    }
+
+    .section-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-ingresar__formulario {
+        width: 80%;
+        min-width: 200px;
+    }
+
+    .main-nuevo__form {
+        width: 90%;
+
+    }
+
+    .titulo__input {
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .titulo__input input {
+        width: 90%;
+    }
+
+    .titulo__input select {
+        width: 96%;
+    }
+
+    .titulo__input label {
+        width: 90%;
+        margin-top: .5rem;
+    }
+
+}
